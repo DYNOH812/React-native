@@ -1,10 +1,7 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Colors from '../constants/Colors';
 import { forwardRef } from 'react';
-
-type ButtonProps = {
-  text: string;
-} & React.ComponentPropsWithoutRef<typeof Pressable>;
+import { ButtonProps } from '@/assets/data/products';
 
 const Button = forwardRef<View | null, ButtonProps>(
   ({ text, ...pressableProps }, ref) => {

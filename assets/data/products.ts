@@ -1,3 +1,5 @@
+import { Pressable } from 'react-native';
+
 const products = [
   {
     id: 1,
@@ -72,3 +74,6 @@ const products = [
 ];
 
 export default products;
+export type ButtonProps = {
+  text: string;
+} & React.ComponentPropsWithoutRef<typeof Pressable>;
